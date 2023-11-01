@@ -234,12 +234,20 @@ First of all we are going to set up the Arduino IDE for the 3 boards used in the
 Also for the BLE Sense board it is necessary to install the library Mbed OS Nano Boards by Arduino in the Boards Manager from the IDE. This library is to upload the code to the board. 
 
 <p align="center">
-<img src="media/1.png" width="40%">
+<img src="media/1.png" width="20%">
 </p>
 
 For the BLE Sense Board it is necessary to install the LPS22HB library and the Arduino_HTS221 by Arduino in the library Manager from the IDE. This library is to use the Bluetooth connectivity in the board.
 
+<p align="center">
+<img src="media/2.png" width="20%">
+</p>
+
 For the Oplá IoT Kit it is necessary to install the library Arduino SAMD Boards in the Boards Manager from the IDE. This one is for The Arduino MKR WiFi 1010 that is attached to the Opla Carrier to load the code.
+
+<p align="center">
+<img src="media/3.png" width="20%">
+</p>
 
 For the Oplá IoT Kit it is necessary to install the library WiFiNINA by Arduino in the library Manager from the IDE. This one is for WIFI connectivity. 
 
@@ -258,4 +266,17 @@ Finally we have everything setup in our Arduino IDE and we can start using the b
 After this we have everything prepared to run our code, but we need a model to run this so wait and train the model.
 
 
+## Exploration Data Analysis and Model Training on a custom dataset
+In this section, we will dive deeper into the Notebook to do an EDA and explore how to train it .
 
+Exploratory Data Analysis (EDA) is a crucial step in model training. It acts as the compass guiding your journey through the dataset's intricacies, helping you understand its structure and identify key features that influence model performance. EDA unveils data distributions, patterns, and correlations, enabling informed decisions about data preprocessing, feature selection, and augmentation strategies. In essence, EDA sets the stage for a successful model, ensuring it's built on a foundation of insights and data understanding.
+
+TensorFlow, our open-source ally, empowers us in unraveling weather data and enhancing prediction accuracy, bringing deeper insights to meteorology.
+
+You're right; weather prediction may not require data augmentations in the same way as object detection. Here's a revised version of the text focused on weather prediction:
+
+Once armed with a good dataset, we transition to training our weather prediction model. This journey involves presenting the labeled data in batches to our model, progressively enhancing its capacity to map meteorological data to precise forecasts.
+
+<p align="center">
+<img src="media/21.png" width="60%">
+</p>
