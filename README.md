@@ -133,7 +133,6 @@ We need to use Buster version of Raspberry Pi OS or another distribution such as
 ```
 sudo apt update   
 sudo apt upgrade   
-
 ```
 
 After updating and upgrading we will write the following command to install the Mosquitto Broker enter these next commands: 
@@ -184,4 +183,76 @@ Now finishing with the MQTT configuration we need to install the Library Paho-MQ
 ```
 sudo pip install paho-mqtt  
 ```
+
+## Creating a Streamlit WebApp for Dashboarding and Weather Prediction
+Streamlitis an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in minutes. Streamlit apps are Python scripts that run from top to bottom. Every time a user opens a browser tab pointing to your app, the script is re-executed. As the script executes, Streamlit draws its output live in a browser.
+
+[Create an app](https://docs.streamlit.io/library/get-started/create-an-app) using Streamlit’s core features to fetch and cache data, draw charts, plot information on a map, and use interactive widgets, like a slider, to filter results.
+
+Let’s prepare the virtual environment for the Streamlit app. First let’s create a virtual environment and once created then activate it (Raspberry Pi OS).
+
+```
+python -m venv env
+source/env/bin/activate
+```
+
+Then we have to install Numpy, Plotly, Tensorflow and Streamlit. Try to install in the next order.
+
+```
+pip install streamlit
+pip install plotly
+pip install numpy
+pip install tensorflow
+```
+
+After this we are ready to try the hello world in Streamlit to check that everything is installed correctly. Create a file called app.py and put the next code lines using your favorite IDE:
+
+```
+import streamlit as st
+st.write("Hello, World!")
+```
+
+Then run it from the terminal in cmd and if everything works fine will open the browser.
+
+```
+streamlit run app.py
+```
+
+Then to create a tool to upload use a model trained with TensorFlow Lite and use Plotly to Dashboard our weather data  and use the model we need to open the code editor and let’s get started by replacing the previous file and creating a new one named Weather_prediction.py. But we also need a folder called model, and for the moment is everything. Now let’s go to the next step.
+
+
+### Setup in Windows : 
+Is time to configure and set everything on Windows (What I used) to train the model and upload the codes to the boards that we are going to use: 
+First of all we are going to set up the Arduino IDE for the 3 boards used in the project. After installing the Arduino IDE in your computer it is necessary to install in the board manager the core needed for each board here are the links to see the Documentation from Arduino as a quick start guide for each board. 
+
+* [Arduino Nano 33 BLE Sense](https://store-usa.arduino.cc/products/arduino-nano-33-ble-sense)
+* [Arduino Opla IoT Kit](https://store-usa.arduino.cc/products/arduino-opla-iot-kit)
+
+Also for the BLE Sense board it is necessary to install the library Mbed OS Nano Boards by Arduino in the Boards Manager from the IDE. This library is to upload the code to the board. 
+
+<p align="center">
+<img src="media/1.png" width="60%">
+</p>
+
+For the BLE Sense Board it is necessary to install the LPS22HB library and the Arduino_HTS221 by Arduino in the library Manager from the IDE. This library is to use the Bluetooth connectivity in the board.
+
+For the Oplá IoT Kit it is necessary to install the library Arduino SAMD Boards in the Boards Manager from the IDE. This one is for The Arduino MKR WiFi 1010 that is attached to the Opla Carrier to load the code.
+
+For the Oplá IoT Kit it is necessary to install the library WiFiNINA by Arduino in the library Manager from the IDE. This one is for WIFI connectivity. 
+
+For the Oplá IoT Kit Board it is necessary to install the library Arduino_MKRIoTCarrier by Arduino in the library Manager from the IDE. This one is for the Carrier control for the sensors. 
+
+### Getting the MQTT library for the Arduino boards: 
+
+For the Arduino Oplá to interact with the Raspberry Pi broker, you need to install the [PubSubClient library](https://github.com/knolleary/pubsubclient). This library provides a client for doing simple publish/subscribe messaging with a server that supports MQTT (basically allows your Arduino to talk with a MQTT Broker). 
+
+[Click here to download the PubSubClient library](https://github.com/knolleary/pubsubclient/archive/master.zip). You should have a .zip folder in your Downloads folder Unzip the .zip folder and you should get pubsubclient-master folder Rename your folder from pubsubclient-master to pubsubclient Move the pubsubclient folder to your Arduino IDE installation libraries folder Then, re-open your Arduino IDE.
+
+The last library is array.h that I included in my repo in the Folder Libraries Because I forgot where I got it [Repo](), repeat the same steps from the PubSubClient library to use it.
+
+Finally we have everything setup in our Arduino IDE and we can start using the boards, but before doing that we need to set up everything in our windows machine to train our model with the Edge Impulse Platform. 
+
+After this we have everything prepared to run our code, but we need a model to run this so wait and train the model.
+
+
 
