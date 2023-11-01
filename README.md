@@ -189,6 +189,9 @@ Streamlitis an open-source app framework for Machine Learning and Data Science t
 
 [Create an app](https://docs.streamlit.io/library/get-started/create-an-app) using Streamlit’s core features to fetch and cache data, draw charts, plot information on a map, and use interactive widgets, like a slider, to filter results.
 
+To setup your Raspberry Pi for the first time check [my tutorial](https://medium.com/@lalodatos/setting-up-your-raspberry-pi-4-wireless-cd3e70a53e3b).
+
+
 Let’s prepare the virtual environment for the Streamlit app. First let’s create a virtual environment and once created then activate it (Raspberry Pi OS).
 
 ```
@@ -231,7 +234,7 @@ First of all we are going to set up the Arduino IDE for the 3 boards used in the
 Also for the BLE Sense board it is necessary to install the library Mbed OS Nano Boards by Arduino in the Boards Manager from the IDE. This library is to upload the code to the board. 
 
 <p align="center">
-<img src="media/1.png" width="60%">
+<img src="media/1.png" width="40%">
 </p>
 
 For the BLE Sense Board it is necessary to install the LPS22HB library and the Arduino_HTS221 by Arduino in the library Manager from the IDE. This library is to use the Bluetooth connectivity in the board.
