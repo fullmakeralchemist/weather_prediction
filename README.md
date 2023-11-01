@@ -294,13 +294,15 @@ Once armed with a good dataset, we transition to training our weather prediction
 
 We need to use Google Colab to see the [EDA and the model Train notebook](https://github.com/fullmakeralchemist/weather_prediction/blob/master/notebooks/)
 
-After we successfully train the model we need two things the model.h file and the tensorflowlite file
+After we successfully train the model we need two things the model.h file and the tensorflowlite file, we can download the files from Google Colab as shown in the images bellow.
 
 
 <p align="center">
-<img src="media/7.png" width="30%">
+<img src="media/7.png" width="20%">
 </p>
 
 <p align="center">
-<img src="media/8.png" width="30%">
+<img src="media/8.png" width="20%">
 </p>
+
+Now it's time to use our 
