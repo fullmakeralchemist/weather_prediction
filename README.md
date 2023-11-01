@@ -274,7 +274,7 @@ After this we have everything prepared to run our code, but we need a model to r
 ## Methodology
 
 <p align="center">
-<img src="media/4.png" width="20%">
+<img src="media/4.png" width="60%">
 </p>
 
 ### Exploration Data Analysis and Model Training on a custom dataset
@@ -298,9 +298,9 @@ After we successfully train the model we need two things the model.h file and th
 
 
 <p align="center">
-<img src="media/7.png" width="60%">
+<img src="media/7.png" width="30%">
 </p>
 
 <p align="center">
-<img src="media/8.png" width="60%">
+<img src="media/8.png" width="30%">
 </p>
