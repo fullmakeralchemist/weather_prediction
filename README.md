@@ -417,34 +417,37 @@ The full view of the EDA page:
 
 ## Challenges I ran into and What I learned
 
-One of the main challenges was to label with labelimg I didn't found a way to install it using Conda in Windows also the same in a virtual environment. After doing research I found how to download it in binary. 
+One of the main challenges was finding weather data for Mexico. As such, there is no portal where information can be extracted easily. Try using [https://openweathermap.org/api](https://openweathermap.org/api), but it only gives information for 4 days after the date. Currently, there is the option of obtaining the history but it has a cost. Outside of that, the sources of information in Mexico about the climate can be classified as null or of low quality.
 
-The second main challenge was to run the Streamlit app in the Share hub, I have problems with the Pytorch version. The one I installed on my computer was not compatible with the platform and then it was missing the packages.txt. 
+The second main challenge was to deploy the model on an Arduino card since only few cards have the capacity to run a specific model, only those that have the ARM® Cortex®-M4 processor. At the same time, these cards mostly do not have the necessary sensors to read the necessary pressure, humidity and temperature data. In addition, they only have Bluetooth communication, which makes communication with Streamlit difficult.
 
-Finally, this is the first time I use Roboflow and Streamlit. In the end, I learned that whenever you may think that you found no way out, the motivation may help you to find alternative solutions with these resources.
+Finally, this is the first time I've used a communication protocol with Streamlit. In the end, I learned that whenever you may think that you found no way out, motivation can help you find alternative solutions with these resources.
 
 ## Observations about the project
 
-The Share Streamlit Hub has only 1GB of memory to run apps so I need to be careful with what I deploy and also I try to run it in Heroku but it only gives me 500MB of memory so I couldn't run the app in Heroku. The images data set is hard to create because it is necessary to have images different from each other but with a webcam it is hard to get a variety of hands position. Also if hands position are similar can confuse some things. For this I would like to try PoseNet or MediaPipe to compare both.
+Streamlit Share needs a broker for some service so that it can be deployed, due to lack of time and knowledge of cloud tools that allow Streamlit Share to communicate with Arduino remotely using the communication protocol used, this project can only be used at the moment communicate locally. 
 
-Capturing images with the hands position could be hard doing more than 20 photos of a hand gesture. 
+In addition, Streamlit Share only has 1 GB of memory to run applications, so I have to be careful with what I deploy and with the size of the csv file that will collect the data, the period of time in which it collects the data. It can be crucial to define the limit of registrations that can be made. 
+
+The data set is from Istanbul so the climate is not the same as in Mexico and although the data gave very good results in the model, the ideal is to train a model with information from the current area in which I live but it will take time to have a 9-year database like the one I used from Istanbul. For this I would like to have a year of records to compare results.
 
 ## Accomplishments that I'm proud of
 
-- Building a custom script to capture images and just change a few variables for each project
-- Create a images data set
-- Have a model with an accuracy of >90 %
-- Learning new technologies in a record time
-- Create a Live demo using Streamlit
-- Start creating a tool that will help others
+- Building of a custom script to collect information and the option to include more variables.
+- Train a model with environmental variables.
+- Have a model with a very good prediction of the current climate.
+- Apply knowledge of communication protocols with AI.
+- Create a dashboard using Streamlit.
+- Start creating a tool that will help others.
 
 ## What's next for Hands Spelling Recognition with Object detection
 
-- Develop a hand posture reconcnition model with PoseNet and/or Mediapipe
-- Upload images and annotations from AWS or GCP or Azure to Roboflow.
-- Deploy Model in Raspberry Pi.
-- Upload images from Raspberry Pi
-- Add web cam and video object detection
+- Find a way to deploy with a broker in Streamlit Share
+- Obtain more information and, if possible, include more variables.
+- Use my project and train an image model to recognize the weather and make records of it.
+- Compare data from Mexico to Istanbul to find similarities.
+- Add the option to do dashboarding with the collected data to the app.
+- Improve model's accuracy
 
 ## License
 
