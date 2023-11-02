@@ -69,24 +69,10 @@
   * [Raspberry Pi 4 configuration to run the code](#raspberry-pi-4-configuration-to-run-the-code)
 * [Creating a Streamlit WebApp for Dashboarding and Weather Prediction](#creating-a-streamlit-webapp-for-dashboarding-and-weather-prediction)
   * [Setup in Windows](#setup-in-windows)
-* [Creating a Streamlit WebApp for Image Object Detection with a Roboflow model](#creating-a-streamlit-webapp-for-image-object-detection-with-a-roboflow-model)
-  * [Create a Uploading an Image On Streamlit WebApp](#create-a-uploading-an-image-on-streamlit-webapp)
-* [How to add video and webcam object detection and tracking in your Streamlit App](#how-to-add-video-and-webcam-object-detection-and-tracking-in-your-streamlit-app)
-  * [Implementing Object Tracking with YOLOv8 Architectures](#implementing-object-tracking-with-yolov8-architectures)
-  * [Getting Started With YoloV8 Tracking](#getting-started-with-yolov8-tracking)
-  * [Implementing the Object-Tracking In Our Streamlit App](#implementing-the-object-tracking-in-our-streamlit-app)
-* [Enhancing Active Learning: Uploading Data to Roboflow from Windows or Google Colab using the API](#enhancing-active-learning-uploading-data-to-roboflow-from-windows-or-google-colab-using-the-api)
-  * [Upload images to Roboflow using the API and Python](#upload-images-to-roboflow-using-the-api-and-python)
-* [Enhancing Active Learning: Uploading Data to Roboflow from Raspberry Pi using the API](#enhancing-active-learning-uploading-data-to-roboflow-from-raspberry-pi-using-the-api)
-  * [Upload images to Roboflow using the API and Python (Thonny IDE in Raspberry Pi)](#upload-images-to-roboflow-using-the-api-and-python-thonny-ide-in-raspberry-pi)
-* [How to Deploy a Roboflow (YOLOv8) Model to a Raspberry Pi](#how-to-deploy-a-roboflow-yolov8-model-to-a-raspberry-pi)
-  * [Download the Roboflow Docker Container to the Pi](#download-the-roboflow-docker-container-to-the-pi)
-  * [Run Inference](#run-inference)
-* [How to deploy a Streamlit app in Raspberry Pi locally](#how-to-deploy-a-streamlit-app-in-raspberry-pi-locally)
-  * [Advantages of Running Locally](#advantages-of-running-locally)
-  * [Prerequisites](#prerequisites-1)
-  * [Raspberry Pi 4 Setup](#raspberry-pi-4-setup)
-  * [Installing PyTorch and OpenCV](#installing-pytorch-and-opencv)
+  * [Getting the MQTT library for the Arduino boards](#getting-the-mqtt-library-for-the-arduino-boards)
+* [Methodology](#methodology)
+* [Exploration Data Analysis and Model Training on a custom dataset](#exploration-data-analysis-and-model-training-on-a-custom-dataset)
+* [#deploy-a-model-in-streamlit](#deploy-a-model-in-streamlit)
 * [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
 * [Observations about the project](#observations-about-the-project)
 * [Accomplishments that I'm proud of](#accomplishments-that-im-proud-of)
@@ -384,7 +370,7 @@ It should look like this one is succesfully working:
 <img src="media/12.png">
 </p>
 
-## Deploy in Streamlit
+## Deploy a Model in Streamlit
 
 We are going to use the communication protocol to send the data in real time and the tensorflow lite model will be used in the app to predit how is the weather outside.
 
