@@ -366,3 +366,13 @@ With all the elements the final structure of the project is like this:
 <p align="center">
 <img src="media/14.png">
 </p>
+
+Nos it's time to go back to the Raspberry Pi env we created before we need to put the [code folder](https://github.com/fullmakeralchemist/weather_prediction/tree/master/code) in that folder contains all the elements from this repo, in case you retrain with your own dataset replace the file tflite_model.tflite in the folder model and that should be the only change. 
+
+Also to run the code change the broker number for the IP from the Raspberry Pi in the Weather_Prediction.py
+
+Once you run it it should look like this:
+
+<p align="center">
+<img src="media/15.gif">
+</p>
