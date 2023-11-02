@@ -371,8 +371,65 @@ Nos it's time to go back to the Raspberry Pi env we created before we need to pu
 
 Also to run the code change the broker number for the IP from the Raspberry Pi in the Weather_Prediction.py
 
+It's time to run in Raspberry Pi:
+
+```
+streamlit run Weather_Prediction.py
+```
+
 Once you run it it should look like this:
 
 <p align="center">
 <img src="media/15.gif">
 </p>
+
+When is waiting for data to make a predition:
+
+<p align="center">
+<img src="media/16.gif">
+</p>
+
+When received data:
+
+<p align="center">
+<img src="media/17.gif">
+</p>
+
+## Challenges I ran into and What I learned
+
+One of the main challenges was to label with labelimg I didn't found a way to install it using Conda in Windows also the same in a virtual environment. After doing research I found how to download it in binary. 
+
+The second main challenge was to run the Streamlit app in the Share hub, I have problems with the Pytorch version. The one I installed on my computer was not compatible with the platform and then it was missing the packages.txt. 
+
+Finally, this is the first time I use Roboflow and Streamlit. In the end, I learned that whenever you may think that you found no way out, the motivation may help you to find alternative solutions with these resources.
+
+## Observations about the project
+
+The Share Streamlit Hub has only 1GB of memory to run apps so I need to be careful with what I deploy and also I try to run it in Heroku but it only gives me 500MB of memory so I couldn't run the app in Heroku. The images data set is hard to create because it is necessary to have images different from each other but with a webcam it is hard to get a variety of hands position. Also if hands position are similar can confuse some things. For this I would like to try PoseNet or MediaPipe to compare both.
+
+Capturing images with the hands position could be hard doing more than 20 photos of a hand gesture. 
+
+## Accomplishments that I'm proud of
+
+- Building a custom script to capture images and just change a few variables for each project
+- Create a images data set
+- Have a model with an accuracy of >90 %
+- Learning new technologies in a record time
+- Create a Live demo using Streamlit
+- Start creating a tool that will help others
+
+## What's next for Hands Spelling Recognition with Object detection
+
+- Develop a hand posture reconcnition model with PoseNet and/or Mediapipe
+- Upload images and annotations from AWS or GCP or Azure to Roboflow.
+- Deploy Model in Raspberry Pi.
+- Upload images from Raspberry Pi
+- Add web cam and video object detection
+
+## License
+
+
+<!-- CONTACT -->
+## Contact
+
+Eduardo Padron - [LinkedIn: @padrondata](https://www.linkedin.com/in/padrondata/)
