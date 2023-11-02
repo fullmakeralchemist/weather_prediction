@@ -395,6 +395,26 @@ When received data:
 <img src="media/17.png">
 </p>
 
+Now last but not least I add multipage to show the dahsboard from the EDA in the same app, this will be usefull as a point of reference, and in a future with the collected data that is saving in a csv file, show the information that was used for the training.
+
+The final app look like this:
+
+<p align="center">
+<img src="media/18.gif">
+</p>
+
+The full view of the main page:
+
+<p align="center">
+<img src="media/19.png">
+</p>
+
+The full view of the EDA page:
+
+<p align="center">
+<img src="media/20.png">
+</p>
+
 ## Challenges I ran into and What I learned
 
 One of the main challenges was to label with labelimg I didn't found a way to install it using Conda in Windows also the same in a virtual environment. After doing research I found how to download it in binary. 
