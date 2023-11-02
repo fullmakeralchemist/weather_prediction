@@ -72,7 +72,7 @@
   * [Getting the MQTT library for the Arduino boards](#getting-the-mqtt-library-for-the-arduino-boards)
 * [Methodology](#methodology)
 * [Exploration Data Analysis and Model Training on a custom dataset](#exploration-data-analysis-and-model-training-on-a-custom-dataset)
-* [#deploy-a-model-in-streamlit](#deploy-a-model-in-streamlit)
+* [Deploy a Model in Streamlit](#deploy-a-model-in-streamlit)
 * [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
 * [Observations about the project](#observations-about-the-project)
 * [Accomplishments that I'm proud of](#accomplishments-that-im-proud-of)
