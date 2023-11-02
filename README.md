@@ -277,6 +277,36 @@ After this we have everything prepared to run our code, but we need a model to r
 <img src="media/4.png" width="60%">
 </p>
 
+This data collection project is designed to address the challenges faced by professionals in the field of hydraulic engineering, particularly in Mexico, where reliable data sources are often scarce. The primary objectives of the project are as follows:
+
+1. Kaggle Dataset Exploration: In this phase, seek out a database on Kaggle that aligns with the project's objectives and can provide valuable insights. Once identified, extract this dataset to explore its contents and ascertain its suitability for the project's goals.
+
+[Dataset](https://www.kaggle.com/datasets/vonline9/weather-istanbul-data-20092019)
+
+2. Exploratory Data Analysis (EDA):
+With the collected data in hand, an exploratory data analysis will be conducted. This stage delves into the data's intricacies, revealing patterns, trends, and valuable insights. The EDA phase is crucial in understanding the dataset's potential and limitations.
+
+3. Arduino Data Collection: Utilize Arduino-based sensors for the collection of real-time data on temperature, pressure, humidity, and other relevant variables if the project looks necessary. This approach provides a cost-effective and efficient means of acquiring valuable data.
+
+4. TensorFlow Modeling: Utilize the TensorFlow framework to design and train machine learning models capable of forecasting weather conditions. These models will leverage input variables from both the Kaggle dataset and, when a sufficient amount of data is available, the Arduino-created database.
+
+5. Streamlit Deployment: Develop an intuitive and user-friendly web application using Streamlit, which will serve as a dynamic dashboard. This application will not only deliver real-time weather predictions utilizing the machine learning models but also present a range of exploratory data analysis (EDA) visualizations. Users will have convenient access to actionable insights and a visual representation of the data, eliminating the need for complex data analysis tools.**
+
+
+6. Local Data Repository: A key feature of the Streamlit app will be the ability to save the collected data as CSV files. This serves as a starting point for building a local data repository for weather-related information. Over time, this repository will grow, providing valuable historical data for local analysis and decision-making.
+
+7. Arduino Model Deployment: Implement the deployment of the trained machine learning model on an Arduino board using TensorFlow Lite. This ensures that the predictive power is readily available in real-time, even in resource-constrained environments.
+
+Functioning desire result:
+<p align="center">
+<img src="media/10.png" width="60%">
+</p>
+
+This is how it will work in Raspberry Pi:
+<p align="center">
+<img src="media/11.png" width="60%">
+</p>
+
 ### Exploration Data Analysis and Model Training on a custom dataset
 In this section, we will dive deeper into the Notebook to do an EDA and explore how to train it .
 
@@ -305,4 +335,8 @@ After we successfully train the model we need two things the model.h file and th
 <img src="media/8.png" width="20%">
 </p>
 
-Now it's time to use our 
+Now it's time to use our BLE board code you can find it in the Folder [Arduino](https://github.com/fullmakeralchemist/weather_prediction/tree/master/arduino), yout just need to make sure the model.h file is in the same folder the Arduino code, after that you just need to open the file in Arduino a click upload to board.
+
+<p align="center">
+<img src="media/9.gif">
+</p>
