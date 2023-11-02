@@ -307,7 +307,7 @@ This is how it will work in Raspberry Pi:
 <img src="media/11.png" width="60%">
 </p>
 
-### Exploration Data Analysis and Model Training on a custom dataset
+## Exploration Data Analysis and Model Training on a custom dataset
 In this section, we will dive deeper into the Notebook to do an EDA and explore how to train it .
 
 Exploratory Data Analysis (EDA) is a crucial step in model training. It acts as the compass guiding your journey through the dataset's intricacies, helping you understand its structure and identify key features that influence model performance. EDA unveils data distributions, patterns, and correlations, enabling informed decisions about data preprocessing, feature selection, and augmentation strategies. In essence, EDA sets the stage for a successful model, ensuring it's built on a foundation of insights and data understanding.
@@ -339,4 +339,30 @@ Now it's time to use our BLE board code you can find it in the Folder [Arduino](
 
 <p align="center">
 <img src="media/9.gif">
+</p>
+
+It should look like this one is succesfully working:
+
+<p align="center">
+<img src="media/12.png">
+</p>
+
+## Deploy in Streamlit
+
+We are going to use the communication protocol to send the data in real time and the tensorflow lite model will be used in the app to predit how is the weather outside.
+
+As mentioned before we are going to use the Raspberry to install a broker and this broker will work as show in the image below
+
+<p align="center">
+<img src="media/13.png">
+</p>
+
+To know more about the protocol check out my tutorial. 
+
+[Arduino and Raspberry](https://medium.com/@lalodatos/applications-with-raspberry-pi-and-arduino-using-mqtt-b6594c29aed8)
+
+With all the elements the final structure of the project is like this:
+
+<p align="center">
+<img src="media/14.png">
 </p>
