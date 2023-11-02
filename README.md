@@ -56,6 +56,45 @@
 </p>
 <br />
 
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Motivation](#motivation)
+  * [Built With](#built-with)
+    * [Empowering Through AIoT: Inclusive Data Solutions](#empowering-through-aiot-inclusive-data-solutions)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+* [Introduction](#introduction)
+  * [Raspberry Pi 4 configuration to run the code](#raspberry-pi-4-configuration-to-run-the-code)
+* [Creating a Streamlit WebApp for Dashboarding and Weather Prediction](#creating-a-streamlit-webapp-for-dashboarding-and-weather-prediction)
+  * [Setup in Windows](#setup-in-windows)
+* [Creating a Streamlit WebApp for Image Object Detection with a Roboflow model](#creating-a-streamlit-webapp-for-image-object-detection-with-a-roboflow-model)
+  * [Create a Uploading an Image On Streamlit WebApp](#create-a-uploading-an-image-on-streamlit-webapp)
+* [How to add video and webcam object detection and tracking in your Streamlit App](#how-to-add-video-and-webcam-object-detection-and-tracking-in-your-streamlit-app)
+  * [Implementing Object Tracking with YOLOv8 Architectures](#implementing-object-tracking-with-yolov8-architectures)
+  * [Getting Started With YoloV8 Tracking](#getting-started-with-yolov8-tracking)
+  * [Implementing the Object-Tracking In Our Streamlit App](#implementing-the-object-tracking-in-our-streamlit-app)
+* [Enhancing Active Learning: Uploading Data to Roboflow from Windows or Google Colab using the API](#enhancing-active-learning-uploading-data-to-roboflow-from-windows-or-google-colab-using-the-api)
+  * [Upload images to Roboflow using the API and Python](#upload-images-to-roboflow-using-the-api-and-python)
+* [Enhancing Active Learning: Uploading Data to Roboflow from Raspberry Pi using the API](#enhancing-active-learning-uploading-data-to-roboflow-from-raspberry-pi-using-the-api)
+  * [Upload images to Roboflow using the API and Python (Thonny IDE in Raspberry Pi)](#upload-images-to-roboflow-using-the-api-and-python-thonny-ide-in-raspberry-pi)
+* [How to Deploy a Roboflow (YOLOv8) Model to a Raspberry Pi](#how-to-deploy-a-roboflow-yolov8-model-to-a-raspberry-pi)
+  * [Download the Roboflow Docker Container to the Pi](#download-the-roboflow-docker-container-to-the-pi)
+  * [Run Inference](#run-inference)
+* [How to deploy a Streamlit app in Raspberry Pi locally](#how-to-deploy-a-streamlit-app-in-raspberry-pi-locally)
+  * [Advantages of Running Locally](#advantages-of-running-locally)
+  * [Prerequisites](#prerequisites-1)
+  * [Raspberry Pi 4 Setup](#raspberry-pi-4-setup)
+  * [Installing PyTorch and OpenCV](#installing-pytorch-and-opencv)
+* [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
+* [Observations about the project](#observations-about-the-project)
+* [Accomplishments that I'm proud of](#accomplishments-that-im-proud-of)
+* [What's next for Hands Spelling Recognition with Object detection](#whats-next-for-hands-spelling-recognition-with-object-detection)
+* [License](#license)
+* [Contact](#contact)
+
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -121,8 +160,6 @@ This project aims to empower professionals like me and my colleagues in civil pr
 
 By doing so, we aspire to transform the way hydraulic engineers and environmentalists access and utilize data, making it more accessible, actionable, and capable of driving informed decision-making in critical areas such as flood prevention, water resource management, and environmental risk assessment.
 
-
-
 ## Prerequisites 
 Before getting a local copy up and running the project you need to first follow this simple steps: 
 This is a list of things you need to use the software and how to install them. First we're gonna start with the configuration for our Raspberry Pi.
@@ -160,7 +197,7 @@ Then after saving the document, you have to restart the Mosquitto Broker run the
 sudo systemctl restart mosquitto.service   
 ```
 
-Also to configure the Broker to start when you start up your Linux machine you have to run the following command in the terminal: 
+Also to configure the Broker to start when you start up your Raspberry Pi you have to run the following command in the terminal: 
 
 ```
 sudo systemctl enable mosquitto.service   
@@ -224,7 +261,7 @@ streamlit run app.py
 Then to create a tool to upload use a model trained with TensorFlow Lite and use Plotly to Dashboard our weather data  and use the model we need to open the code editor and let’s get started by replacing the previous file and creating a new one named Weather_prediction.py. But we also need a folder called model, and for the moment is everything. Now let’s go to the next step.
 
 
-### Setup in Windows : 
+### Setup in Windows
 Is time to configure and set everything on Windows (What I used) to train the model and upload the codes to the boards that we are going to use: 
 First of all we are going to set up the Arduino IDE for the 3 boards used in the project. After installing the Arduino IDE in your computer it is necessary to install in the board manager the core needed for each board here are the links to see the Documentation from Arduino as a quick start guide for each board. 
 
