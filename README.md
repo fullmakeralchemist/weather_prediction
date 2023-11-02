@@ -46,14 +46,6 @@
     <br />
     <a href="https://dashboardweather-eduardo-bootcamp.streamlit.app/"><strong>Proyecto Dashboard»</strong></a>
     <br />
-  </p>
-  <!--
-  <p align="center">
-  <a href="https://experiments.withgoogle.com/mapping-dance">
-    <img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
-  </a>
-  </p>
-  -->
   <br />
 </p>
 <br />
