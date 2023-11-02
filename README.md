@@ -288,7 +288,7 @@ For the Arduino Oplá to interact with the Raspberry Pi broker, you need to inst
 
 [Click here to download the PubSubClient library](https://github.com/knolleary/pubsubclient/archive/master.zip). You should have a .zip folder in your Downloads folder Unzip the .zip folder and you should get pubsubclient-master folder Rename your folder from pubsubclient-master to pubsubclient Move the pubsubclient folder to your Arduino IDE installation libraries folder Then, re-open your Arduino IDE.
 
-The last library is array.h that I included in my repo in the Folder Libraries Because I forgot where I got it [Repo](), repeat the same steps from the PubSubClient library to use it.
+The last library is array.h that I included in my repo in the Folder Libraries Because I forgot where I got it [Library](https://github.com/fullmakeralchemist/weather_prediction/tree/master/library/), repeat the same steps from the PubSubClient library to use it.
 
 Finally we have everything setup in our Arduino IDE and we can start using the boards, but before doing that we need to set up everything in our windows machine to train our model with the Edge Impulse Platform. 
 
