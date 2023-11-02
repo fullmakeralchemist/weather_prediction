@@ -386,13 +386,13 @@ Once you run it it should look like this:
 When is waiting for data to make a predition:
 
 <p align="center">
-<img src="media/16.gif">
+<img src="media/16.png">
 </p>
 
 When received data:
 
 <p align="center">
-<img src="media/17.gif">
+<img src="media/17.png">
 </p>
 
 ## Challenges I ran into and What I learned
